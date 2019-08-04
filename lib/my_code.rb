@@ -11,9 +11,9 @@ def map(array)
 end
 #-------------------------
 
-def reduce(array, sp=nil)
-  if sp
-    accum = sp
+def reduce(array, starting_point=nil)
+  if starting_point
+    accum = starting_point
     i = 0
   else
     accum = s[0]
