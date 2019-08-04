@@ -1,4 +1,4 @@
-def my_own_map(array)
+def map(array)
   new_arr = []
 
   i = 0
@@ -10,3 +10,4 @@ def my_own_map(array)
  return new_arr  
 end
  
+map([1,2,3,-9])
