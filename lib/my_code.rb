@@ -11,14 +11,17 @@ def map(array)
 end
 #-------------------------
 
-def reduce(array)
-  new_arr = []
-
-  i = 0
-   while i < array.length do
-    new_arr << yield(array[i])
+def reduce(array, sp=nil)
+  if sp
+    accum = sp
+    i = 0
+  else
+    accum = s[0]
+    i = 1
+  end
+  while i < s.length
+    accum = yield(accum, s[i])
     i += 1
   end
-
- return new_arr  
+  accum
 end
