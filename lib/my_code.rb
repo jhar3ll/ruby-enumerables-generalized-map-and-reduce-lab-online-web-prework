@@ -1,4 +1,4 @@
-def map(array)
+def my_own_map(array)
   new_arr = []
 
   i = 0
