@@ -10,4 +10,3 @@ def map(array)
  return new_arr  
 end
  
-map([1,2,3,-9])
