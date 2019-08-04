@@ -3,7 +3,7 @@ def map(array)
 
   i = 0
    while i < array.length do
-    new_arr << yield(array[i] * -1)
+    new_arr << yield(array[i])
     
     i += 1
   end
@@ -11,4 +11,3 @@ def map(array)
  return new_arr  
 end
  
-map([1,2,3,-9])
